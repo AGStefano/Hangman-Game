@@ -1,0 +1,138 @@
+body {
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#app {
+    display: flex;
+    padding: 15px;
+}
+
+.textBox {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stick-figure {
+    position: relative;
+    width: 100px;
+    height: 200px;
+    margin: 20px 0 0 50px;
+  }
+  
+  #head, #torso{
+    position: absolute;
+    background-color: black;
+  }
+  
+  #head {
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: none;
+  }
+  
+  #torso {
+    top: 50px;
+    width: 10px;
+    height: 100px;
+    left: 20px;
+    display: none;
+  }
+  
+  #left-arm {
+    left: 5px;
+    transform-origin: right center;
+    transform: rotate(45deg);
+    display: none;
+
+    top: 100px;
+    width: 60px;
+    height: 10px;
+    position: absolute;
+    background-color: black;
+  }
+  
+  #right-arm {
+    left: -15px;
+    transform-origin: left center;
+    transform: rotate(-45deg);
+    display: none;
+
+    top: 100px;
+    width: 60px;
+    height: 10px;
+    position: absolute;
+    background-color: black;
+  }
+  
+  #left-leg {
+    left: -5px;
+    transform: rotate(45deg);
+    display: none;
+
+    top: 135px;
+    width: 10px;
+    height: 70px; 
+    position: absolute;
+    background-color: black;
+  }
+  
+  #right-leg {
+    left: 45px;
+    transform: rotate(-45deg);
+    display: none;
+
+    top: 135px;
+    width: 10px;
+    height: 70px; 
+    position: absolute;
+    background-color: black;
+  }
+
+.backgroundModal {
+    width: 100%;
+    height: 100vh;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.7;   
+    z-index: 1;
+    display: none;
+}
+
+.modal {
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    border: 2px solid #fafafa;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    align-items: center;
+    display: none;
+}
+
+.modalDiv {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
